@@ -78,10 +78,5 @@ namespace Application.Service
             await _productRepository.UpdateProductAsync(product);
             _logger.LogInformation($"Updated product with id: {id}");
         }
-
-        Task<IEnumerable<ProductDto>> IProductService.GetAllProducts(ProductParameters productParameters)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
