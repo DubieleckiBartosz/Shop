@@ -79,9 +79,5 @@ namespace Application.Service
             _logger.LogInformation($"Updated product with id: {id}");
         }
 
-        Task<IEnumerable<ProductDto>> IProductService.GetAllProducts(ProductParameters productParameters)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
